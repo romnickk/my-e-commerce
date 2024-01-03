@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+/* input[type="radio"] {
+      accent-color: #ffaaaa; 
+    }
+    input[type="radio"]:checked {
+      background: #aaffaa; /* Replace with your checked color code */
+    /* } */ */
+    .nav-auto{
+    /* position: absolute; */
+    /* display: flex; */
+    /* width: 600px; */
+    /* justify-content: center; */
+    /* margin-top: 160px; */
+    
+}
+    .nav-auto div{
+background-color: rgb(197, 191, 191);
+
+padding: 5px;
+border-radius: 10px;
+transition: 1s;
+}
+
+#radio1:checked ~ .nav-auto .auto-btn1{
+    background: yellow;
+}
+
+#clickableDiv{
+    background: green;
+    border: 2px solid black;
+    height: 200px;
+    width: 200px;
+}
+</style>
+<body>
+    <input type="radio" name="radio-btn" id="radio1">
+    
+    <div class="nav-auto">
+        <div class="auto-btn1">
+            
+        </div>
+    </div>
+
+    <div id="clickableDiv" onclick="buy()">
+        
+      </div>
+           
+            <script>
+                function buy(){
+                    window.location.href = "/myorder";
+                }
+            </script>
+
+
+
+</body>
+</html>
